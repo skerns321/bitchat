@@ -3,6 +3,36 @@
 
 A secure, decentralized, peer-to-peer messaging app that works over Bluetooth mesh networks. No internet required, no servers, no phone numbers - just pure encrypted communication.
 
+## 🔧 Development Tools & Extensions
+
+This repository now includes additional development tools for working with bitchat and Bluetooth mesh networks:
+
+### Bluetooth Development Tools
+- **`bluetooth_scanner.py`** - Scan for nearby Bluetooth devices
+- **`bitchat_monitor.py`** - Monitor mesh network activity for debugging
+- **`bt_activity_monitor.py`** - Real-time Bluetooth activity tracking with RSSI monitoring
+- **`bluetooth_toolkit.py`** - Unified launcher for all Bluetooth tools
+
+### MCP (Model Context Protocol) Servers
+- **`bitchat_mcp_server.py`** - MCP server for bitchat development
+- **`basic_mcp_server.py`** - Basic MCP server implementation
+- Multiple test servers and debugging tools for MCP development
+
+### Usage
+```bash
+# Launch the Bluetooth toolkit
+python3 bluetooth_toolkit.py
+
+# Run individual tools
+python3 bluetooth_scanner.py --continuous
+python3 bt_activity_monitor.py --live
+
+# Start MCP server
+python3 bitchat_mcp_server.py
+```
+
+---
+
 ## License
 
 This project is released into the public domain. See the [LICENSE](LICENSE) file for details.
