@@ -1,11 +1,19 @@
 ![ChatGPT Image Jul 5, 2025 at 06_07_31 PM](https://github.com/user-attachments/assets/2660f828-49c7-444d-beca-d8b01854667a)
-# bitchat
+# Bitchat MCP Server with Tools
 
-A secure, decentralized, peer-to-peer messaging app that works over Bluetooth mesh networks. No internet required, no servers, no phone numbers - just pure encrypted communication.
+A comprehensive development toolkit built around **bitchat** - a secure, decentralized, peer-to-peer messaging app that works over Bluetooth mesh networks. This repository includes the original bitchat application plus extensive development tools and MCP (Model Context Protocol) servers.
 
-## 🔧 Development Tools & Extensions
+## 🚀 What's Included
 
-This repository now includes additional development tools for working with bitchat and Bluetooth mesh networks:
+### Core Application
+- **bitchat** - Secure, decentralized messaging over Bluetooth mesh networks
+- No internet required, no servers, no phone numbers - just pure encrypted communication
+
+### MCP (Model Context Protocol) Servers
+- **`bitchat_mcp_server.py`** - Full-featured MCP server for bitchat development
+- **`basic_mcp_server.py`** - Basic MCP server implementation
+- **`working_mcp_server.py`** - Production-ready MCP server
+- Multiple test servers and debugging tools for MCP development
 
 ### Bluetooth Development Tools
 - **`bluetooth_scanner.py`** - Scan for nearby Bluetooth devices
@@ -13,12 +21,24 @@ This repository now includes additional development tools for working with bitch
 - **`bt_activity_monitor.py`** - Real-time Bluetooth activity tracking with RSSI monitoring
 - **`bluetooth_toolkit.py`** - Unified launcher for all Bluetooth tools
 
-### MCP (Model Context Protocol) Servers
-- **`bitchat_mcp_server.py`** - MCP server for bitchat development
-- **`basic_mcp_server.py`** - Basic MCP server implementation
-- Multiple test servers and debugging tools for MCP development
+### Development & Testing Tools
+- **`test_mcp_server.py`** - MCP server testing utilities
+- **`debug_mcp_config.py`** - MCP configuration debugging
+- **`troubleshoot_mcp.md`** - Troubleshooting guide
+- **`requirements.txt`** - Python dependencies
 
-### Usage
+## 🛠️ Quick Start
+
+### Launch the MCP Server
+```bash
+# Start the main bitchat MCP server
+python3 bitchat_mcp_server.py
+
+# Or start a basic test server
+python3 working_mcp_server.py
+```
+
+### Use the Bluetooth Tools
 ```bash
 # Launch the Bluetooth toolkit
 python3 bluetooth_toolkit.py
@@ -26,18 +46,20 @@ python3 bluetooth_toolkit.py
 # Run individual tools
 python3 bluetooth_scanner.py --continuous
 python3 bt_activity_monitor.py --live
+```
 
-# Start MCP server
-python3 bitchat_mcp_server.py
+### Build and Run bitchat
+```bash
+# Generate Xcode project
+xcodegen generate
+
+# Open in Xcode
+open bitchat.xcodeproj
 ```
 
 ---
 
-## License
-
-This project is released into the public domain. See the [LICENSE](LICENSE) file for details.
-
-## Features
+## Original bitchat Features
 
 - **Decentralized Mesh Network**: Automatic peer discovery and multi-hop message relay over Bluetooth LE
 - **End-to-End Encryption**: X25519 key exchange + AES-256-GCM for private messages
