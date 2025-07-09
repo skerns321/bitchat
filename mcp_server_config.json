@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "bitchat": {
+      "command": "python3",
+      "args": ["bitchat_mcp_server.py"],
+      "cwd": "/Users/stephen.kerns/Desktop/NAMTAB -TOOLS/bitchat",
+      "env": {
+        "PYTHONPATH": "/Users/stephen.kerns/Desktop/NAMTAB -TOOLS/bitchat"
+      }
+    }
+  }
+}
